@@ -11,10 +11,10 @@ Product.belongsTo(Category)
 Category.hasMany(Product)
 // Categories have many Products
 
-Product.belongsToMany(Tag, )
+Product.belongsToMany(Tag)
 // Products belongToMany Tags (through ProductTag)
 
-Tag.belongsToMany(ProductTag, )
+Tag.belongsToMany(ProductTag)
 // Tags belongToMany Products (through ProductTag)
 
 module.exports = {
